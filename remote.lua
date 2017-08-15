@@ -91,8 +91,7 @@ end
 
 -- Handle simple control functions
 actions.playpause = function() -- Pause / Play
-	-- kb.stroke("p");
-	decreaseCoverSize();
+	kb.stroke("space");
 end
 
 actions.skiptimetoggle = function() -- Skip timer toggle
@@ -105,7 +104,7 @@ actions.skiptimetoggle = function() -- Skip timer toggle
 	elseif skiptimeval == 2 then
 		layout.skiptime.text = "1min";
 	elseif skiptimeval == 3 then
-		layout.skiptime.text = "10min";
+		layout.skiptime.text = "10min";	
 	end
 end
 
@@ -159,5 +158,3 @@ actions.volumeup = increaseVolume;
 actions.volumedown = decreaseVolume;
 actions.volumemute = muteVolume;
 actions.togglefullscreen = toggleFullscreen;
-
-print("wtf");

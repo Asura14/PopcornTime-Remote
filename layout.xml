@@ -3,40 +3,31 @@
 	<row weight="2">
 		<tabs color="#424242">
 
-			<!-- Main Interface Control Tab -->
+			<!-- Main Interface Control TAB -->
 			<tab color="#1565C0" text="Main Interface">
 				
 				<!-- Category Switcher -->
-				<row>
+				<row weight="1">
 					<grid>
 						<row>
-							<button color="#42A5F5" text="Movies" ontap="switchvideosource,movies" />
-							<button color="#42A5F5" text="TV Shows" ontap="switchvideosource,tv" />
-							<button color="#42A5F5" text="Anime" ontap="switchvideosource,anime" />
+							<button color="#c12643" text="Movies" ontap="switchvideosource,movies" />
+							<button color="#c12643" text="TV Shows" ontap="switchvideosource,tv" />
+							<button color="#c12643" text="Anime" ontap="switchvideosource,anime" />
 						</row>
 					</grid>
 				</row>
 
-				<!-- Gap -->
-				<row weight="1"></row>
-
-				<row>
+				<row weight="2">
 					<grid>
-						<!-- Arrow controls -->
-						<button weight="3" icon="search" ontap="search" />
-						<button weight="1" text="clear search" ontap="clearsearch" />
-						<button weight="1" text="Change Quality" ontap="changequality" />
-						<!-- End of Arrow Controls -->
+						<button icon="back" ontap="goback" />
+						<button icon="search" ontap="search" />
+						<button text="select\n (Play)" ontap="select"/>
 					</grid>
 				</row>
 
-				<!-- Gap -->
-				<row weight="1"></row>
-
-				<!-- Navigation Controls -->
-				<row weight="2">
-					<!-- Arrow Buttons -->
-					<grid>
+				<!-- Arrow Buttons -->
+				<row weight="6">
+					<grid weight="3">
 						<row>
 							<button icon="up" ontap="moveup" />
 						</row>
@@ -48,44 +39,29 @@
 							<button icon="down" ontap="movedown" />
 						</row>
 					</grid>
-
-					<!-- Select/Back Buttons -->
-					<grid>
-						<row>
-							<button icon="back" ontap="goback" />
-						</row>
-						<row>
-							<button text="select\n(Play Video)" ontap="select"/>
-						</row>
-					</grid>
 				</row>
 			</tab>
 
-			<!-- Video Player Control Tab -->
+			<!-- Video Player Control TAB -->
 			<tab color="#7CB342" text="Video Player">
 				<grid>
-					<!-- Gap -->
-					<row weight="5"></row>
-
-					<!-- Volume + Fullscreen Control -->
-					<row weight="1">
-						<button icon="vdown" ontap="volumedown" />
-						<button icon="vup" ontap="volumeup"/>
-						<button icon="vmute" ontap="volumemute" />
-						<button icon="fullscreen" ontap="togglefullscreen" />
+					<row weight="2">
+						<button color="#c12643" icon="vmute" ontap="volumemute" />
+						<button color="#c12643" icon="vdown" ontap="volumedown" />
+						<button color="#c12643" icon="vup" ontap="volumeup"/>
 					</row>
 
-					<!-- Playback Controls -->
+					<row weight="3">
+						<button color="#c12643" icon="playpause" />
+						<button color="#c12643" icon="fullscreen" ontap="togglefullscreen" />
+					</row>
+
 					<row weight="1">
-						<button icon="playpause" />
-						<button icon="rwd" ontap="skipbackward" />
-						<button icon="ff" ontap="skipforward" />
-						<button id="skiptime" text="10s" ontap="skiptimetoggle" />
+						<button color="#c12643" icon="rwd" ontap="skipbackward" />
+						<button color="#c12643" icon="ff" ontap="skipforward" />
 					</row>
 				</grid>
 			</tab>
-
-			
 		</tabs>
 	</row>
 </layout>
