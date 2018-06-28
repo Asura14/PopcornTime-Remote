@@ -5,6 +5,11 @@ Unfortunately in Portugal most of the shows are not available in the main stream
 
 I made this remote for myself but feel free to use it.
 
+## Screens
+
+Navigation Screen                           | Controls Screen
+------------------------------------------- | -------------------------------------------
+![](Screenshot_Nav.png "Navigation Screen") | ![](Screenshot_Player.png "Controls Screen") 
 
 ## Original
 Developed and maintained by **mikembley**  
