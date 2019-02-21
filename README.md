@@ -11,6 +11,6 @@ Navigation Screen                           | Controls Screen
 ------------------------------------------- | -------------------------------------------
 ![](Screenshot_Nav.png "Navigation Screen") | ![](Screenshot_Player.png "Controls Screen") 
 
-## Original
+## Forked from
 Developed and maintained by **mikembley**  
 https://github.com/unifiedremote/PopcornTime-Remote/tree/master/
